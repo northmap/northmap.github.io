@@ -1,0 +1,285 @@
+#sidebarA{
+  color: white;
+}
+
+#logo{width:100%;
+      margin-top: 10px;
+      height: 100%;}
+
+#logo:hover { 
+  opacity: 0.7; 
+}
+
+@media (max-width: 800px) {
+  #logo {position: relative;
+    width:50%;
+    left: -10%;
+  }
+}
+
+
+#filterResults{
+  font-size: 12px;
+  color: white;
+  background-color: #576C81;
+}
+
+
+#filterResults:hover { background-color:#5e9538ff; }
+
+
+
+#removeFilters{
+  background-color: #576C81;
+}
+
+#removeFilters:hover { background-color:#5e9538ff; }
+
+
+.theme{
+  background-color: white;
+}
+
+.select{
+  font-style: italic;
+  opacity: .7;
+}
+
+
+.listings .item {
+  font: 400 15px/22px 'Source Sans Pro', 'Arial', Sans-serif;
+  word-wrap: break-word;
+  text-decoration: none;
+  border-bottom: solid rgb(34, 33, 33, .3) 1.5px;
+}
+
+@media (max-width: 600px) {
+  .listings .item {
+    font-size: 12px;
+    line-height: 100%;
+    padding-bottom: 5px;
+  }
+}
+
+
+.listings .item:last-child {
+  border-bottom: none;
+  padding-bottom: 450px;
+}
+
+.listings .item .title {
+  display: inline-block;
+  width: 100%;
+  color: #576C81;
+  font-weight: 800;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .listings .item .title {
+    font-size: 14px;
+    height: 10%;
+  }
+}
+
+
+.listings .item .title:hover { color:#5e9538ff; }
+.listings .item.active {  background-color:#576C81;}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #576C81;
+}
+
+
+.clearfix {
+  display: block;
+}
+
+.clearfix::after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.mapboxgl-popup-content {
+  font: 400 15px/22px 'Source Sans Pro', 'Arial', Sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5;
+  width: 400px;
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 600px) {
+  .mapboxgl-popup-content {
+      max-width: 250px;
+      border-radius: 3px;
+      padding: 1;    
+      max-height: 250px;
+      overflow-y: scroll;
+   }
+}
+
+
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+  .mapboxgl-popup-content h4{
+      width: 100%;
+   }
+}
+
+
+
+.mapboxgl-popup-content h3 {
+  color:#576C81;
+  font-weight: 550;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  display: block;
+
+}
+
+.mapboxgl-popup-content h2 {
+  color:black;
+  font-weight: 150;
+  text-align: left;
+  line-height: 130%;
+  font-size: 12px;
+  margin-bottom: 15px;
+  padding: 5;
+
+}
+
+
+.mapboxgl-popup {
+  padding: 15px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter:alpha(opacity=70);
+  -moz-opacity:0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+  z-index: 100;
+  display: none;
+  }
+  .cnt223 a{
+  text-decoration: none;
+  }
+  .popup{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: none;
+  position: fixed;
+  z-index: 101;
+  }
+  .cnt223{
+  min-width: 30%;
+  width: 80%;
+  height: 70%;
+  min-height: 30%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 100px auto;
+  background: #f3f3f3;
+  opacity: 100%;
+  position: relative;
+  z-index: 103;
+  padding: 15px 35px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #000;
+  }
+  
+  @media (max-width: 600px) {
+  .cnt223{
+  min-width: 30%;
+  width: 90%;
+  height: 80%;
+  min-height: 30%;
+  overflow: auto;
+  margin: 100px auto;
+  background: #f3f3f3;
+  opacity: 100%;
+  position: relative;
+  bottom: 10%;
+  z-index: 10;
+  padding: 10px 10px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px #000;
+     }
+  }
+  
+  .cnt223 p{
+  clear: both;
+      color: #555555;
+      /* text-align: justify; */
+      font-size: 15px;
+      font-family: 'arial', sans-serif;
+  }
+  
+  @media (max-width: 600px) {
+      .cnt223 p {
+      font-size: 11px;
+      font-family: 'arial', sans-serif;
+      line-height: 130%;
+  
+     }
+  }
+  
+  .cnt223 p a{
+  color: #576C81;
+  font-weight: bold;
+  }
+  .cnt223 p a:hover{
+  color: #5e9538ff;
+  }
+  
+  .close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 52px;
+  color: #576C81;
+  transform: rotate(45deg);
+  }
+  
+  @media (max-width: 600px) {
+  .close{
+  font-size: 25px;
+  font-family: 'arial', sans-serif;
+     }
+  }
+  
+  .close:hover{
+  cursor: pointer;
+  color: #5e9538ff;
+  }
+  
