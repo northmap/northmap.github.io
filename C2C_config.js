@@ -5,7 +5,7 @@ const config = {
     CSV: "https://docs.google.com/spreadsheets/d/1fq76srdzD0AR4pULNNpx_Mja0zq0vv8yfOZd39Q7RNs/gviz/tq?tqx=out:csv&sheet=Sheet1",
     center: [-7.71333,54.27536], //Lng, Lat
     zoom: 11, //Default zoom
-    pitch: 50,
+    pitch: 10,
    
     title: "",
     sideBarInfo: ["Subject", "Type"],
