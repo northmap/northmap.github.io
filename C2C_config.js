@@ -8,8 +8,8 @@ const config = {
     pitch: 10,
    
     title: "",
-    sideBarInfo: ["Subject", "Type"],
-    popupInfo: ["Subject",],
+    sideBarInfo: ["Title English", "Poet"],
+    popupInfo: ["Title English",],
     filters: [
         
         {
