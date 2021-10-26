@@ -160,6 +160,17 @@
 
 }
 
+.mapboxgl-popup-content h4 {
+  color:black;
+  font-weight: 150;
+  text-align: left;
+  line-height: 130%;
+  font-size: 12px;
+  margin-bottom: 15px;
+  padding: 5;
+
+}
+
 .mapboxgl-popup-content h2 {
   color:black;
   font-weight: 150;
