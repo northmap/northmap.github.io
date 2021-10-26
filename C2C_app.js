@@ -42,7 +42,7 @@ function createPopup(currentFeature) {
     const popup = new mapboxgl.Popup({ closeOnClick: true })
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>"+
-        '<h2>' + currentFeature.properties.Poet + currentFeature.properties.Poet_Residence + '</h2>'+
+        '<h2>' + currentFeature.properties.Poet_residence + '</h2>'+
         '<h4>' + currentFeature.properties.PoemEnglish + '</h4>')
         .addTo(map);
     
