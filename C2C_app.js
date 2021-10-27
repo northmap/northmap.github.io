@@ -499,7 +499,7 @@ map.on("load", function () {
                     "data": geojsonData
                 },
                 layout: {
-                     "text-field": "{Subject}",
+                     "text-field": "{Poem}",
                      "text-size": [
                         "interpolate",
                         ["linear"],
