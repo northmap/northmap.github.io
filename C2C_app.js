@@ -471,9 +471,9 @@ map.on("load", function () {
                         "interpolate",
                         ["linear"],
                         ["zoom"],
-                        10,
+                        0,
                         "hsla(23, 90%, 56%, 0.7)",
-                        13,
+                        0,
                         "hsla(13, 92%, 34%, 0.62)"
                       ], // color of circles
                     "circle-stroke-color": "hsl(298, 3%, 100%)",
