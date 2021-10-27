@@ -457,7 +457,7 @@ map.on("load", function () {
                     "type": "geojson",
                     "data": geojsonData
                 },
-                //"paint": {
+                "paint": {
                     "circle-radius": [
                         "interpolate",
                         ["linear"],
