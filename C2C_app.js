@@ -460,19 +460,19 @@ map.on("load", function () {
                 "paint": {
                     "circle-radius": [
                         "interpolate",
-                        ["linear"],
+                        ["exponential", 0.66],
                         ["zoom"],
-                        10.66,
-                        3,
-                        14,
-                        9
+                        9,
+                        2,
+                        22,
+                        5
                       ], // size of circles
                     "circle-color": [
                         "interpolate",
                         ["linear"],
                         ["zoom"],
                         10,
-                        "hsla(23, 90%, 56%, 0.7)",
+                        "hsla(180, 7%, 3%, 100",
                         13,
                         "hsla(13, 92%, 34%, 0.62)"
                       ], // color of circles
