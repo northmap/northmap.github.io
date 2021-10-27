@@ -460,12 +460,12 @@ map.on("load", function () {
                 "paint": {
                     "circle-radius": [
                         "interpolate",
-                        ["exponential", 0.66],
+                        ["linear"],
                         ["zoom"],
-                        9,
-                        2,
-                        22,
-                        5
+                        10.66,
+                        3,
+                        14,
+                        9
                       ], // size of circles
                     "circle-color": [
                         "interpolate",
@@ -473,7 +473,7 @@ map.on("load", function () {
                         ["zoom"],
                         10,
                         "hsla(23, 90%, 56%, 0.7)",
-                        10,
+                        13,
                         "hsla(13, 92%, 34%, 0.62)"
                       ], // color of circles
                     "circle-stroke-color": "hsl(298, 3%, 100%)",
