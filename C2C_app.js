@@ -486,7 +486,7 @@ map.on("load", function () {
                         16,
                         5
                       ],
-                    "circle-opacity": 0
+                    "circle-opacity": 1
                 }
 
             });
@@ -499,7 +499,7 @@ map.on("load", function () {
                     "data": geojsonData
                 },
                 layout: {
-                     "text-field": "{Poem}",
+                     "text-field": "{PoemEnglish}",
                      "text-size": [
                         "interpolate",
                         ["linear"],
