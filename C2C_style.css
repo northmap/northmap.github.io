@@ -128,7 +128,7 @@
 @media (max-width: 600px) {
   .mapboxgl-popup-content {
       max-width: 250px;
-      font-family: Darker Grotesque;
+      font-family: 'Darker Grotesque';
       border-radius: 3px;
       padding: 1;    
       max-height: 250px;
