@@ -487,7 +487,7 @@ map.on("load", function () {
                         5
                       ],
                     "circle-opacity": 1
-                }//
+                }
 
             });
 
