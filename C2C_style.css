@@ -253,13 +253,13 @@
       color: #555555;
       /* text-align: justify; */
       font-size: 15px;
-      font-family: 'grotesque', sans-serif;
+      font-family: 'Darker Grotesque', sans-serif;
   }
   
   @media (max-width: 600px) {
       .cnt223 p {
       font-size: 11px;
-      font-family: 'Grotesque', sans-serif;
+      font-family: 'Darker Grotesque', sans-serif;
       line-height: 130%;
   
      }
@@ -285,7 +285,7 @@
   @media (max-width: 600px) {
   .close{
   font-size: 25px;
-  font-family: 'Grotesque', sans-serif;
+  font-family: 'Darker Grotesque', sans-serif;
      }
   }
   
