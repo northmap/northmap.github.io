@@ -47,7 +47,7 @@
 
 
 .listings .item {
-  font: 400 15px/22px 'Source Sans Pro', 'Arial', Sans-serif;
+  font: 400 15px/22px 'Darker Grotesque Bold', Sans-serif;
   word-wrap: break-word;
   text-decoration: none;
   border-bottom: solid rgb(34, 33, 33, .3) 1.5px;
@@ -116,7 +116,7 @@
 }
 
 .mapboxgl-popup-content {
-  font: 400 15px/22px 'Grotesque', Sans-serif;
+  font: 400 15px/22px 'Darker Grotesque Medium', Sans-serif;
   text-align: center;
   border-radius: 5px;
   padding: 5;
