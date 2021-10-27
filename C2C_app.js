@@ -472,7 +472,7 @@ map.on("load", function () {
                         ["linear"],
                         ["zoom"],
                         10,
-                        "hsla(180, 7%, 3%, 100",
+                        "hsla(23, 90%, 56%, 0.7)",
                         13,
                         "hsla(13, 92%, 34%, 0.62)"
                       ], // color of circles
