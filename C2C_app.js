@@ -521,7 +521,7 @@ map.on("load", function () {
                      "text-justify": "left",
                      "text-anchor": "top-left",
                      "text-font": [
-                        "Brandon Text Medium",
+                        "Darker Grotesque Medium",
                         "Arial Unicode MS Regular"
                       ]
                    },
