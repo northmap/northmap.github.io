@@ -10,15 +10,6 @@ const config = {
    
     title: "",
     sideBarInfo: ["Title English", "Poet"],
-    popupInfo: ["Title English",],
-    filters: [
-        
-        {
-            type: "checkbox",
-            title: "Themes: ",
-            columnHeader: "Type",
-            listItems: ["At Home and on the Land", "Built and Industrial", "Cultural", "Historical & Archaeological", "Natural"]
-        }
-    ]
+    popupInfo: ["Title English",]
 
 };
