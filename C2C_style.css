@@ -55,6 +55,7 @@
 
 @media (max-width: 600px) {
   .listings .item {
+    font-family: 'Darker Grotesque Bold';
     font-size: 12px;
     line-height: 100%;
     padding-bottom: 5px;
@@ -220,7 +221,7 @@
   height: 70%;
   min-height: 30%;
   font-family: 'Darker Grotesque';
-  font-size: 55px;
+  font-size: 75px;
   overflow-y: auto;
   overflow-x: hidden;
   margin: 100px auto;
