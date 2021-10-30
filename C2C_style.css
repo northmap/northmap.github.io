@@ -219,6 +219,8 @@
   width: 80%;
   height: 70%;
   min-height: 30%;
+  font-family: 'Darker Grotesque';
+  font-size: 55px;
   overflow-y: auto;
   overflow-x: hidden;
   margin: 100px auto;
