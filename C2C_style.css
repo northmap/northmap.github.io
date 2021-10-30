@@ -117,6 +117,7 @@
 
 .mapboxgl-popup-content {
   font: 400 15px/22px 'Darker Grotesque Bold', Sans-serif;
+  font-family: 'Darker Grotesque Bold';
   text-align: center;
   border-radius: 5px;
   padding: 5;
