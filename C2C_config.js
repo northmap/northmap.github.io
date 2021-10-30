@@ -9,7 +9,7 @@ const config = {
     pitch: 32.50,
    
     title: "",
-    sideBarInfo: ["Title English", "Poet"],
+    sideBarInfo: ["Title English", "Poet"]/*,
     popupInfo: ["Title English",],
     filters: [
         
@@ -19,6 +19,6 @@ const config = {
             columnHeader: "Type",
             listItems: ["At Home and on the Land", "Built and Industrial", "Cultural", "Historical & Archaeological", "Natural"]
         }
-    ]
+    ]*/
 
 };
