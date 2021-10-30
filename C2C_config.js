@@ -9,8 +9,8 @@ const config = {
     pitch: 32.50,
    
     title: "",
-    sideBarInfo: ["Title English", "Poet"]/*,
-    popupInfo: ["Title English",],
+    sideBarInfo: ["Title English", "Poet"],
+    popupInfo: ["Title English",]/*,
     filters: [
         
         {
