@@ -470,7 +470,7 @@ map.on("load", function () {
                     "circle-color": [
                         "hsl(180, 2%, 100%)"
                       ], // color of circles
-                    "circle-stroke-color": "#000000",
+                    "circle-stroke-color": "hsl(180, 2%, 100%)",
                     "circle-stroke-width": [
                         "interpolate",
                         ["linear"],
