@@ -478,7 +478,7 @@ map.on("load", function () {
                         16,
                         5
                       ],
-                    "circle-opacity": 1
+                    "circle-opacity": 0.1
                 }
 
             });
