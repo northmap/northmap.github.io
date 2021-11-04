@@ -469,7 +469,7 @@ map.on("load", function () {
                       ], // size of circles
                     "circle-color": "hsl(180, 4%, 93%)", // color of circles
                    
-                    "circle-opacity": 0.1
+                    "circle-opacity": 0
                 }
 
             });
