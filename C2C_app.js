@@ -463,9 +463,9 @@ map.on("load", function () {
                         ["exponential", 0.66],
                         ["zoom"],
                         9,
-                        2,
+                        17,
                         22,
-                        5
+                        30
                       ], // size of circles
                     "circle-color": [
                         "interpolate",
