@@ -460,11 +460,11 @@ map.on("load", function () {
                 "paint": {
                     "circle-radius": [
                         "interpolate",
-                        ["exponential", 0.66],
+                        ["exponential", 0.71],
                         ["zoom"],
                         9,
-                        17,
-                        22,
+                        2,
+                        13,
                         30
                       ], // size of circles
                     "circle-color": [
