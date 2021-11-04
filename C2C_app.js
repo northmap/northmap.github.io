@@ -479,7 +479,7 @@ map.on("load", function () {
                         0.5,
                         22,
                         0
-                      ]
+                      ],
                     "circle-opacity": 1
                 }
 
