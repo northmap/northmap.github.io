@@ -468,9 +468,15 @@ map.on("load", function () {
                         30
                       ], // size of circles
                     "circle-color": [
-                        "hsl(180, 2%, 100%)"
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        10,
+                        "hsla(23, 90%, 56%, 0.7)",
+                        13,
+                        "hsla(13, 92%, 34%, 0.62)"
                       ], // color of circles
-                    "circle-stroke-color": "hsl(298, 3%, 100%)",
+                    "circle-stroke-color": "hsl(0, 21%, 21%)",
                     "circle-stroke-width": [
                         "interpolate",
                         ["linear"],
