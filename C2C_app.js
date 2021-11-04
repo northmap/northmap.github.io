@@ -463,22 +463,28 @@ map.on("load", function () {
                         ["exponential", 0.66],
                         ["zoom"],
                         9,
-                        17,
+                        2,
                         22,
-                        30
+                        5
                       ], // size of circles
                     "circle-color": [
-                        "hsl(180, 2%, 100%)"
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        10,
+                        "hsla(23, 90%, 56%, 0.7)",
+                        13,
+                        "hsla(13, 92%, 34%, 0.62)"
                       ], // color of circles
-                    "circle-stroke-color": "hsl(180, 2%, 100%)",
+                    "circle-stroke-color": "hsl(298, 3%, 100%)",
                     "circle-stroke-width": [
                         "interpolate",
                         ["linear"],
                         ["zoom"],
-                        9,
-                        0.5,
-                        22,
-                        0
+                        10.66,
+                        1,
+                        16,
+                        5
                       ],
                     "circle-opacity": 1
                 }
