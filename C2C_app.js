@@ -488,9 +488,8 @@ map.on("load", function () {
                       ],
                     "circle-opacity": 1
                 },
-
-            },
-            firstSymbolId);
+                firstSymbolId
+            },);
 
             map.addLayer({
                 "id": "text",
