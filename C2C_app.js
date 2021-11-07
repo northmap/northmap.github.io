@@ -474,7 +474,7 @@ map.on("load", function () {
 
             });
 
-            map.addLayer({
+            /*map.addLayer({
                 "id": "text",
                 "type": "symbol",
                 "source": {
@@ -531,7 +531,7 @@ map.on("load", function () {
                      "text-halo-color": "hsla(13, 92%, 34%, 0.62)",
                      "text-halo-blur": 0.2
                    }
-                   });
+                   });*/
         });
 
         map.on("click", "locationData", function (e) {
