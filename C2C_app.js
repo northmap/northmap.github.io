@@ -354,10 +354,11 @@ function removeFilters() {
         option.selectedIndex = 0
     });
 
-    map.getSource("locationData").setData(geojsonData);
+     */
+     *map.getSource("locationData").setData(geojsonData);
     map.getSource("text").setData(geojsonData);
     buildLocationList(geojsonData);
-
+    /*
 
 }
 
