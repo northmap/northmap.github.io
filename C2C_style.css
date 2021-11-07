@@ -71,7 +71,7 @@
 .listings .item .title {
   display: inline-block;
   width: 100%;
-  color: #576C81;
+  color: #8FC54B;
   font-weight: 800;
   margin-top: 15px;
   text-decoration: none;
@@ -154,7 +154,7 @@
 
 
 .mapboxgl-popup-content h3 {
-  color:#576C81;
+  color:#8FC54B;
   font-weight: 550;
   font-size: 20px;
   text-align: center;

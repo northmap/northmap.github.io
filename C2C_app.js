@@ -315,14 +315,14 @@ function applyFilters() {
                     filteredGeojson.features.push(feature);
                 }
             });
-        }
+        } */
 
         map.getSource("locationData").setData(filteredGeojson);
          map.getSource("text").setData(filteredGeojson);
         buildLocationList(filteredGeojson);
 
     });
-
+/*
 }
 
 function filters(filterSettings) {
@@ -353,11 +353,13 @@ function removeFilters() {
     selectOption.forEach(function (option) {
         option.selectedIndex = 0
     });
+     */
 
     map.getSource("locationData").setData(geojsonData);
     map.getSource("text").setData(geojsonData);
     buildLocationList(geojsonData);
 
+    /*
 
 }
 
