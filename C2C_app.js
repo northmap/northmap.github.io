@@ -353,13 +353,12 @@ function removeFilters() {
     selectOption.forEach(function (option) {
         option.selectedIndex = 0
     });
-     */
+    
 
     map.getSource("locationData").setData(geojsonData);
     map.getSource("text").setData(geojsonData);
     buildLocationList(geojsonData);
 
-    /*
 
 }
 
