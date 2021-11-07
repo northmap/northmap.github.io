@@ -167,7 +167,7 @@ function buildDropDownList(title, listItems) {
 // listItems - the array of filter items
 // To DO: Clean up code - for every third checkbox, create a div and append new checkboxes to it
 
-/*function buildCheckbox(title, listItems) {
+function buildCheckbox(title, listItems) {
     const filtersDiv = document.getElementById("filters");
     const mainDiv = document.createElement("div");
     const filterTitle = document.createElement("div");
@@ -415,7 +415,7 @@ function sortByDistance(selectedPoint) {
     buildLocationList(data);
 }
 
-*/
+
 
 map.on("load", function () {
 
