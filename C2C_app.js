@@ -355,7 +355,7 @@ function removeFilters() {
     });
 
     
-     *map.getSource("locationData").setData(geojsonData);
+     map.getSource("locationData").setData(geojsonData);
     map.getSource("text").setData(geojsonData);
     buildLocationList(geojsonData);
 
