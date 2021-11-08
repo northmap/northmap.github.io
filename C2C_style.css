@@ -117,7 +117,7 @@
 }
 
 .mapboxgl-popup-content {
-  font: 400 15px/22px 'Darker Grotesque Bold', Sans-serif;
+  font: 400 15px/22px 'Darker Grotesque Bold';
   font-family: 'Darker Grotesque Bold';
   text-align: center;
   border-radius: 5px;
@@ -258,13 +258,13 @@
       color: #555555;
       /* text-align: justify; */
       font-size: 25px;
-      font-family: 'Darker Grotesque', sans-serif;
+      font-family: 'Darker Grotesque';
   }
   
   @media (max-width: 600px) {
       .cnt223 p {
       font-size: 31px;
-      font-family: 'Darker Grotesque', sans-serif;
+      font-family: 'Darker Grotesque';
       line-height: 130%;
   
      }
@@ -290,7 +290,7 @@
   @media (max-width: 600px) {
   .close{
   font-size: 25px;
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: 'Darker Grotesque';
      }
   }
   
