@@ -1,3 +1,16 @@
+/* darker-grotesque-regular - latin */
+@font-face {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/darker-grotesque-v2-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/darker-grotesque-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/darker-grotesque-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/darker-grotesque-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/darker-grotesque-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/darker-grotesque-v2-latin-regular.svg#DarkerGrotesque') format('svg'); /* Legacy iOS */
+}
 #sidebarA{
   color: white;
 }
