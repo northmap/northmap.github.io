@@ -378,7 +378,7 @@ filters(config.filters);
 removeFiltersButton();
 
 
-
+*/
 
 function sortByDistance(selectedPoint) {
     const options = { units: "miles" };
@@ -415,7 +415,7 @@ function sortByDistance(selectedPoint) {
     buildLocationList(data);
 }
 
-*/
+
 
 map.on("load", function () {
 
