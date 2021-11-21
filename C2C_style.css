@@ -271,8 +271,9 @@ body{
   
   @media (max-width: 600px) {
       .cnt223 p {
-      font-size: 31px;
+      font-size: 12px;
       font-family: grotesque;
+      font-weight: 300;
       line-height: 130%;
   
      }
