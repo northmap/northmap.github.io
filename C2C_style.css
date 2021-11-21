@@ -68,7 +68,7 @@
 
 @media (max-width: 600px) {
   .listings .item {
-    font-family: Darker Grotesque;
+    font: 400 15px/22px 'Darker Grotesque Bold', Sans-serif;
     font-size: 12px;
     line-height: 100%;
     padding-bottom: 5px;
@@ -143,7 +143,7 @@
 @media (max-width: 600px) {
   .mapboxgl-popup-content {
       max-width: 250px;
-      font-family: 'Darker Grotesque Bold';
+      font-family: Darker Grotesque;
       border-radius: 3px;
       padding: 1;    
       max-height: 250px;
