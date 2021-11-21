@@ -58,7 +58,7 @@ body{
   font-family: grotesque;
   word-wrap: break-word;
   font-size: 18px;
-  color: #000000;
+  color: #424141;
   font-weight: 600;
   text-decoration: none;
   border-bottom: solid rgb(34, 33, 33, .3) 1.5px;
@@ -167,7 +167,7 @@ body{
 .mapboxgl-popup-content h3 {
   color: #13536d;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 15px;
   display: block;
@@ -186,7 +186,7 @@ body{
 }
 
 .mapboxgl-popup-content h2 {
-  color:black;
+  color:#424141;
   font-weight: 150;
   text-align: left;
   line-height: 130%;
