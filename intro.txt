@@ -19,3 +19,4 @@ Webapp intro text
         
 
 <img src="https://www.c2c.org.uk/wp-content/uploads/2020/10/funder-logos.png"  width="100%"><br><br>
+</p>
