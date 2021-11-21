@@ -58,6 +58,7 @@ body{
   font-family: grotesque;
   word-wrap: break-word;
   font-size: 18px;
+  font-weight: 800;
   text-decoration: none;
   border-bottom: solid rgb(34, 33, 33, .3) 1.5px;
 }
