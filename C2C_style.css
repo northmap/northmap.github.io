@@ -300,7 +300,7 @@ body{
   @media (max-width: 600px) {
   .close{
   font-size: 50px;
-  font-family: grotesque;
+  font-weight: 800;
 }
   }
   
