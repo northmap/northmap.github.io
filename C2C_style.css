@@ -271,7 +271,7 @@ body{
   
   @media (max-width: 600px) {
       .cnt223 p {
-      font-size: 12px;
+      font-size: 15px;
       font-family: grotesque;
       font-weight: 500;
       line-height: 130%;
@@ -289,9 +289,10 @@ body{
   
   .close{
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 52px;
+  top: 6px;
+  right: 6px;
+  font-size: 60px;
+  font-weight: 800;
   color: #576C81;
   transform: rotate(45deg);
   }
