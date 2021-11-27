@@ -27,7 +27,7 @@ function flyToLocation(currentFeature, zoom) {
     // console.log(modified_feature);  
     map.flyTo({
         center: currentFeature,
-        offset: [0, -200],
+        offset: [0, -100],
         zoom: 13,
         pitch: 0,
         speed: 0.3, // make the flying slow
