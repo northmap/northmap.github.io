@@ -15,7 +15,7 @@ body{
       height: 100%;}
 
 #logo:hover { 
-  opacity: 0.7; 
+  opacity: 0.4; 
 }
 
 @media (max-width: 800px) {
@@ -97,7 +97,7 @@ body{
 }
 
 
-.listings .item .title:hover { color:#5e9538ff; }
+.listings .item .title:hover { color:#2CADDF; }
 .listings .item.active {  background-color:#576C81;}
 ::-webkit-scrollbar {
   width: 3px;
@@ -287,7 +287,7 @@ body{
   font-weight: bold;
   }
   .cnt223 p a:hover{
-  color: #5e9538ff;
+  color: #2CADDF;
   }
   
   .close{
@@ -309,6 +309,6 @@ body{
   
   .close:hover{
   cursor: pointer;
-  color: #5e9538ff;
+  color: #2CADDF;
   }
   
