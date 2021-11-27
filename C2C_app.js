@@ -28,7 +28,7 @@ function flyToLocation(currentFeature, zoom) {
     map.flyTo({
         center: currentFeature,
         offset: [0, -50],
-        zoom: 13
+        zoom: 13,
         pitch: 0,
         speed: 0.3, // make the flying slow
         curve: 0.9,
