@@ -21,7 +21,6 @@ body{
 @media (max-width: 800px) {
   #logo {position: relative;
     width:50%;
-    height: 20%;
     left: -10%;
   }
 }
