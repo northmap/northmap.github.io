@@ -21,6 +21,7 @@ body{
 @media (max-width: 800px) {
   #logo {position: relative;
     width:50%;
+    height: 20%;
     left: -10%;
   }
 }
@@ -67,7 +68,8 @@ body{
 @media (max-width: 600px) {
   .listings .item {
     font-family: grotesque;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 100%;
     padding-bottom: 5px;
   }
@@ -91,7 +93,7 @@ body{
 
 @media (max-width: 600px) {
   .listings .item .title {
-    font-size: 16px;
+    font-size: 18px;
     height: 10%;
   }
 }
