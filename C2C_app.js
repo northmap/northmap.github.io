@@ -43,7 +43,7 @@ function createPopup(currentFeature) {
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>"+
         '<h2>' + currentFeature.properties.Poet_Residence + '</h2>'+
-        '<h4>' + currentFeature.properties.PoemEnglish + '</h4>')
+        '<h4>' + currentFeature.properties.PoemEnglish + '</h4>'+'<h5>' + currentFeature.properties.Link_URL + '</h5>')
         .addTo(map);
     
     const width_of_content = $('iframe').contents().width();
