@@ -5,8 +5,8 @@ const config = {
     CSV: "https://docs.google.com/spreadsheets/d/1yg0yXP1qXZWMeFvFmxhHLmWlqRZ9FX4Likhe6zznkDo/gviz/tq?tqx=out:csv&sheet=Sheet1",
     center: [-7.644402, 54.246548], //Lng, Lat
     zoom: 9.43, //Default zoom
-    bearing: 22.32,
-    pitch: 33.37,
+    bearing: 22.30,
+    pitch: 33,
    
     title: "",
     sideBarInfo: ["Title English", "Poet"],
