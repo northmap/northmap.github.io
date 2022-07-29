@@ -8,8 +8,8 @@ const filteredGeojson = {
     "features": []
 };
 var bounds = [
-    [-7.921, 54.120], // Southwest coordinates
-    [-7.559, 54.330] // Northeast coordinates
+    [-8.36313,53.82093], // Southwest coordinates
+    [-7.02769,54.64441] // Northeast coordinates
     ];
 const map = new mapboxgl.Map({
     container: "map",
@@ -27,8 +27,8 @@ function flyToLocation(currentFeature, zoom) {
     // console.log(modified_feature);  
     map.flyTo({
         center: currentFeature,
-        offset: [0, -150],
-        zoom: 15,
+        offset: [0, -100],
+        zoom: 13,
         pitch: 0,
         speed: 0.3, // make the flying slow
         curve: 0.9,
@@ -42,13 +42,12 @@ function createPopup(currentFeature) {
     const popup = new mapboxgl.Popup({ closeOnClick: true })
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>"+
-        '<h2>' + currentFeature.properties.Comments + '</h2>'+'<h4>' + currentFeature.properties.Link_URL + '</h4>')
+        '<h2>' + currentFeature.properties.Poet_Residence + '</h2>'+
+        '<h4>' + currentFeature.properties.PoemEnglish + '</h4>'+'<h4>' + currentFeature.properties.Link_URL + '</h4>')
         .addTo(map);
     
     const width_of_content = $('iframe').contents().width();
     $(".mapboxgl-popup-content").width(width_of_content);
-    setTimeout(
-        onYouTubeIframeAPIReady(), 2500);
     
     // var docwidth = $(".mapboxgl-canvas").width();
     // var popupwidth = $(".mapboxgl-popup-content").width();
@@ -168,7 +167,7 @@ function buildDropDownList(title, listItems) {
 // listItems - the array of filter items
 // To DO: Clean up code - for every third checkbox, create a div and append new checkboxes to it
 
-function buildCheckbox(title, listItems) {
+/*function buildCheckbox(title, listItems) {
     const filtersDiv = document.getElementById("filters");
     const mainDiv = document.createElement("div");
     const filterTitle = document.createElement("div");
@@ -355,7 +354,8 @@ function removeFilters() {
         option.selectedIndex = 0
     });
 
-    map.getSource("locationData").setData(geojsonData);
+    
+     map.getSource("locationData").setData(geojsonData);
     map.getSource("text").setData(geojsonData);
     buildLocationList(geojsonData);
 
@@ -378,7 +378,7 @@ filters(config.filters);
 removeFiltersButton();
 
 
-
+*/
 
 function sortByDistance(selectedPoint) {
     const options = { units: "miles" };
@@ -461,38 +461,21 @@ map.on("load", function () {
                 "paint": {
                     "circle-radius": [
                         "interpolate",
-                        ["linear"],
+                        ["exponential", 0.71],
                         ["zoom"],
-                        10.66,
-                        3,
-                        14,
-                        9
-                      ], // size of circles
-                    "circle-color": [
-                        "interpolate",
-                        ["linear"],
-                        ["zoom"],
-                        10,
-                        "hsla(23, 90%, 56%, 0.7)",
+                        9,
+                        2,
                         13,
-                        "hsla(13, 92%, 34%, 0.62)"
-                      ], // color of circles
-                    "circle-stroke-color": "hsl(298, 3%, 100%)",
-                    "circle-stroke-width": [
-                        "interpolate",
-                        ["linear"],
-                        ["zoom"],
-                        10.66,
-                        1,
-                        16,
-                        5
-                      ],
-                    "circle-opacity": 1
+                        30
+                      ], // size of circles
+                    "circle-color": "hsl(180, 4%, 93%)", // color of circles
+                   
+                    "circle-opacity": 0
                 }
 
             });
 
-            map.addLayer({
+            /*map.addLayer({
                 "id": "text",
                 "type": "symbol",
                 "source": {
@@ -500,7 +483,7 @@ map.on("load", function () {
                     "data": geojsonData
                 },
                 layout: {
-                     "text-field": "{Subject}",
+                     "text-field": "{Title English}",
                      "text-size": [
                         "interpolate",
                         ["linear"],
@@ -522,7 +505,7 @@ map.on("load", function () {
                      "text-justify": "left",
                      "text-anchor": "top-left",
                      "text-font": [
-                        "Brandon Text Medium",
+                        "Darker Grotesque Medium",
                         "Arial Unicode MS Regular"
                       ]
                    },
@@ -549,7 +532,7 @@ map.on("load", function () {
                      "text-halo-color": "hsla(13, 92%, 34%, 0.62)",
                      "text-halo-blur": 0.2
                    }
-                   });
+                   });*/
         });
 
         map.on("click", "locationData", function (e) {
@@ -574,7 +557,7 @@ map.on("load", function () {
 });
 
 // Modal - popup for filtering results
-const filterResults = document.getElementById("filterResults");
+/*const filterResults = document.getElementById("filterResults");
 const exitButton = document.getElementById("exitButton");
 const modal = document.getElementById("modal");
 
@@ -582,7 +565,7 @@ filterResults.addEventListener("click", () => {
     modal.classList.remove("hide-visually");
     modal.classList.add("z5");
 });
-
+*/
 exitButton.addEventListener("click", () => {
     modal.classList.add("hide-visually");
 });
@@ -591,36 +574,3 @@ const title = document.getElementById("title");
 title.innerText = config.title;
 
 map.addControl(new mapboxgl.NavigationControl());
-
-// function onYouTubeIframeAPIReady() {
-//   player = new YT.Player('player', {
-//     host: 'https://www.youtube.com',
-//     events: {
-//       'onStateChange': onPlayerStateChange
-//     }
-//   });
-// }
-
-// function onPlayerStateChange() {
-//   console.log("YOUTUBE API");
-// }
-
-var isFullscreen = document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen;
-$(document).on('mozfullscreenchange webkitfullscreenchange fullscreenchange',function(e){
-  isFullscreen = !isFullscreen;
-  var css_transform;
-  var element = e.target; 
-  if(isFullscreen && element.nodeName === "IFRAME")
-  {
-    var div_clicked = e.target;
-    var div = div_clicked.closest('.mapboxgl-popup');
-    css_transform = div.style.transform;
-    div.style.transform = "none";
-  }
-  else if(!isFullscreen &&  element.tagName === "IFRAME")
-  {
-    var div_clicked = e.target;
-    var div = div_clicked.closest('.mapboxgl-popup');
-    div.style.transform = css_transform;
-  }
-});

@@ -1,3 +1,11 @@
+/* darker-grotesque-regular - latin */
+@font-face {
+    font-family: grotesque;
+    src: url(darker-grotesque-v2-latin-regular.woff);
+  }
+body{
+    font-family: grotesque;
+}
 #sidebarA{
   color: white;
 }
@@ -7,7 +15,7 @@
       height: 100%;}
 
 #logo:hover { 
-  opacity: 0.7; 
+  opacity: 0.4; 
 }
 
 @media (max-width: 800px) {
@@ -47,15 +55,20 @@
 
 
 .listings .item {
-  font: 400 15px/22px 'Source Sans Pro', 'Arial', Sans-serif;
+  font-family: grotesque;
   word-wrap: break-word;
+  font-size: 18px;
+  color: #424141;
+  font-weight: 600;
   text-decoration: none;
   border-bottom: solid rgb(34, 33, 33, .3) 1.5px;
 }
 
 @media (max-width: 600px) {
   .listings .item {
-    font-size: 12px;
+    font-family: grotesque;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 100%;
     padding-bottom: 5px;
   }
@@ -70,21 +83,22 @@
 .listings .item .title {
   display: inline-block;
   width: 100%;
-  color: #576C81;
-  font-weight: 800;
-  margin-top: 15px;
+  font-size: 22px;
+  color: #13536d;
+  font-weight: 900;
+  margin-top: 18px;
   text-decoration: none;
 }
 
 @media (max-width: 600px) {
   .listings .item .title {
-    font-size: 14px;
+    font-size: 18px;
     height: 10%;
   }
 }
 
 
-.listings .item .title:hover { color:#5e9538ff; }
+.listings .item .title:hover { color:#2CADDF; }
 .listings .item.active {  background-color:#576C81;}
 ::-webkit-scrollbar {
   width: 3px;
@@ -116,7 +130,7 @@
 }
 
 .mapboxgl-popup-content {
-  font: 400 15px/22px 'Source Sans Pro', 'Arial', Sans-serif;
+  font-family: grotesque;
   text-align: center;
   border-radius: 5px;
   padding: 5;
@@ -128,6 +142,7 @@
 @media (max-width: 600px) {
   .mapboxgl-popup-content {
       max-width: 250px;
+      font-family: grotesque;
       border-radius: 3px;
       padding: 1;    
       max-height: 250px;
@@ -151,21 +166,32 @@
 
 
 .mapboxgl-popup-content h3 {
-  color:#576C81;
-  font-weight: 550;
-  font-size: 20px;
+  color: #13536d;
+  font-weight: 900;
+  font-size: 22px;
   text-align: center;
   margin-bottom: 15px;
   display: block;
 
 }
 
-.mapboxgl-popup-content h2 {
+.mapboxgl-popup-content h4 {
   color:black;
+  font-weight: 300;
+  text-align: left;
+  line-height: 130%;
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding: 5;
+
+}
+
+.mapboxgl-popup-content h2 {
+  color:#424141;
   font-weight: 150;
   text-align: left;
   line-height: 130%;
-  font-size: 12px;
+  font-size: 18px;
   margin-bottom: 15px;
   padding: 5;
 
@@ -173,7 +199,9 @@
 
 
 .mapboxgl-popup {
-  padding: 15px;
+  padding: 1px;
+  position: absolute;
+
 }
 
 #overlay {
@@ -206,10 +234,11 @@
   width: 80%;
   height: 70%;
   min-height: 30%;
+  font-size: 75px;
   overflow-y: auto;
   overflow-x: hidden;
   margin: 100px auto;
-  background: #f3f3f3;
+  background: #ffffff;
   opacity: 100%;
   position: relative;
   z-index: 103;
@@ -241,14 +270,14 @@
   clear: both;
       color: #555555;
       /* text-align: justify; */
-      font-size: 15px;
-      font-family: 'arial', sans-serif;
+      font-size: 25px;
+      font-family: grotesque;
   }
   
   @media (max-width: 600px) {
       .cnt223 p {
-      font-size: 11px;
-      font-family: 'arial', sans-serif;
+      font-size: 20px;
+      font-family: grotesque;
       line-height: 130%;
   
      }
@@ -259,30 +288,28 @@
   font-weight: bold;
   }
   .cnt223 p a:hover{
-  color: #5e9538ff;
+  color: #2CADDF;
   }
   
   .close{
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 52px;
+  top: 6px;
+  right: 6px;
+  font-size: 60px;
+  font-weight: 800;
   color: #576C81;
   transform: rotate(45deg);
   }
   
   @media (max-width: 600px) {
   .close{
-  font-size: 25px;
-  font-family: 'arial', sans-serif;
-     }
+  font-size: 50px;
+  font-weight: 800;
+}
   }
   
   .close:hover{
   cursor: pointer;
-  color: #5e9538ff;
+  color: #2CADDF;
   }
-  .mapboxgl-popup{
-    will-change:unset !important;
-  }
-  .mapboxgl-popup-content { min-width: 380px; }
+  
