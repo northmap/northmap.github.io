@@ -1,6 +1,6 @@
 
 const config = {
-    style: "mapbox://styles/jbamford/cl4idnsgn001g14qqqnnjv455",
+    style: "mapbox://styles/jbamford/ckg0oa5iv14es19o58hvjucg2",
     accessToken: "pk.eyJ1IjoiamJhbWZvcmQiLCJhIjoia0dZNENUMCJ9._cSAJxiTZhfdH6F1LhxnVw",
     CSV: "https://docs.google.com/spreadsheets/d/13sSrHjS95ZpqPo5OhdxYE87ekgSNpum28MejC-lZMSU/gviz/tq?tqx=out:csv&sheet=Sheet1",
     center: [-7.734, 54.262], //Lng, Lat
