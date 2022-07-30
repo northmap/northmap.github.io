@@ -500,7 +500,7 @@ map.on("load", function () {
                     "data": geojsonData
                 },
                 layout: {
-                     "text-field": "{Subject}",
+                     "text-field": "{Title/name}",
                      "text-size": [
                         "interpolate",
                         ["linear"],
