@@ -8,8 +8,8 @@ const filteredGeojson = {
     "features": []
 };
 var bounds = [
-    [-6.351, 55.179], // Southwest coordinates
-    [-6.123, 55.327] // Northeast coordinates
+    [-6.28,55.2], // Southwest coordinates
+    [-6.17,55.31] // Northeast coordinates
     ];
 const map = new mapboxgl.Map({
     container: "map",
@@ -469,23 +469,33 @@ map.on("load", function () {
                         9
                       ], // size of circles
                     "circle-color": [
-                        "interpolate",
-                        ["linear"],
-                        ["zoom"],
-                        10,
-                        "hsla(23, 90%, 56%, 0.7)",
-                        13,
-                        "hsla(13, 92%, 34%, 0.62)"
+                        "match",
+                        ["get", "Theme"],
+                        ["COAST"],
+                        "hsl(196, 58%, 61%)",
+                        [
+                          "Walking and cycling trails"
+                        ],
+                        "hsl(36, 77%, 65%)",
+                        ["Historical sites"],
+                        "hsl(0, 83%, 64%)",
+                        ["Visitor information"],
+                        "hsl(288, 68%, 68%)",
+                        ["Environmental"],
+                        "hsl(141, 67%, 56%)",
+                        ["Other"],
+                        "hsl(232, 82%, 71%)",
+                        "#000000"
                       ], // color of circles
                     "circle-stroke-color": "hsl(298, 3%, 100%)",
                     "circle-stroke-width": [
                         "interpolate",
                         ["linear"],
                         ["zoom"],
-                        10.66,
-                        1,
-                        16,
-                        5
+                        12.5,
+                        1.5,
+                        15,
+                        4
                       ],
                     "circle-opacity": 1
                 }
