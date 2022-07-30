@@ -15,7 +15,7 @@ const config = {
         {
             type: "checkbox",
             title: "Themes: ",
-            columnHeader: "Type",
+            columnHeader: "Theme",
             listItems: ["COAST", "Walking and cycling trails", "Historical sites", "Environmental", "Other"]
         }
     ]
