@@ -554,7 +554,7 @@ map.on("load", function () {
                         [
                           "Walking and cycling trails"
                         ],
-                        "#9c8549",
+                        "hsl(43, 26%, 31%)",
                         "#000000"
                       ],
                      "text-halo-width": [
