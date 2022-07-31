@@ -481,6 +481,10 @@ map.on("load", function () {
                         "hsl(141, 67%, 56%)",
                         ["Other"],
                         "hsl(232, 82%, 71%)",
+                        [
+                          "Walking and cycling trails"
+                        ],
+                        "hsl(43, 62%, 60%)",
                         "#000000"
                       ], // color of circles
                     "circle-stroke-color": "hsl(298, 3%, 100%)",
@@ -547,6 +551,10 @@ map.on("load", function () {
                         "hsl(141, 31%, 48%)",
                         ["Other"],
                         "#5f6bbf",
+                        [
+                          "Walking and cycling trails"
+                        ],
+                        "#9c8549",
                         "#000000"
                       ],
                      "text-halo-width": [
