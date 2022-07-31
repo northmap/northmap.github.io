@@ -533,15 +533,7 @@ map.on("load", function () {
                       ]
                    },
                    paint: {
-                   "text-opacity":[
-                    "interpolate",
-                    ["linear"],
-                    ["zoom"],
-                    12,
-                    0,
-                    15,
-                    0.95
-                  ],
+                   "text-opacity":1,
                      "text-color": [
                         "match",
                         ["get", "Theme"],
