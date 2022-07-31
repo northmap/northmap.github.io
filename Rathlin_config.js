@@ -9,7 +9,7 @@ const config = {
    
     title: "",
     sideBarInfo: ["Title/name", "Theme"],
-    popupInfo: ["Description",],
+    popupInfo: ["Title/name",],
     filters: [
         
         {
