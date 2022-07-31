@@ -42,7 +42,7 @@ function createPopup(currentFeature) {
     const popup = new mapboxgl.Popup({ closeOnClick: true })
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>"+
-        '<h2>' + currentFeature.properties.Comments + '</h2>'+'<h4>' + currentFeature.properties.Link_URL + '</h4>')
+        '<h2>' + currentFeature.properties.Description + '</h2>'+'<h4>' + currentFeature.properties.Link_URL + '</h4>')
         .addTo(map);
     
     const width_of_content = $('iframe').contents().width();
