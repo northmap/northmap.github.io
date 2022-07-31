@@ -473,10 +473,6 @@ map.on("load", function () {
                         ["get", "Theme"],
                         ["COAST"],
                         "hsl(196, 58%, 61%)",
-                        [
-                          "Walking and cycling trails"
-                        ],
-                        "hsl(36, 77%, 65%)",
                         ["Historical sites"],
                         "hsl(0, 83%, 64%)",
                         ["Visitor information"],
@@ -515,7 +511,7 @@ map.on("load", function () {
                         "interpolate",
                         ["linear"],
                         ["zoom"],
-                        13,
+                        12.5,
                         12,
                         15,
                         18
@@ -525,12 +521,12 @@ map.on("load", function () {
                         ["linear"],
                         ["zoom"],
                         12,
-                        ["literal", [0.5, 0.5]],
+                        ["literal", [0, 0.5]],
                         15,
-                        ["literal", [1, 1.5]]
+                        ["literal", [0, 2]]
                       ],
-                     "text-justify": "left",
-                     "text-anchor": "top-left",
+                     "text-justify": "center",
+                     "text-anchor": "top",
                      "text-font": [
                         "Brandon Text Medium",
                         "Arial Unicode MS Regular"
@@ -547,16 +543,30 @@ map.on("load", function () {
                     0.95
                   ],
                      "text-color": [
+                        "match",
+                        ["get", "Theme"],
+                        ["COAST"],
+                        "hsl(196, 24%, 35%)",
+                        ["Historical sites"],
+                        "hsl(0, 57%, 61%)",
+                        ["Visitor information"],
+                        "hsl(288, 32%, 51%)",
+                        ["Environmental"],
+                        "hsl(141, 31%, 48%)",
+                        ["Other"],
+                        "#5f6bbf",
+                        "#000000"
+                      ],
+                     "text-halo-width": [
                         "interpolate",
                         ["linear"],
                         ["zoom"],
-                        14,
-                        "hsl(0, 62%, 43%)",
+                        12.5,
+                        1,
                         15,
-                        "hsl(0, 6%, 96%)"
+                        2
                       ],
-                     "text-halo-width": 0.5,
-                     "text-halo-color": "hsla(13, 92%, 34%, 0.62)",
+                     "text-halo-color": "hsl(0, 100%, 99%)",
                      "text-halo-blur": 0.2
                    }
                    });
